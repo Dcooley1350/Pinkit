@@ -2,8 +2,6 @@ import React from 'react';
 import Post from './Post';
 
 const PostList = (props) => {
-    console.log(props.masterPostList);
-
     return ( 
         <div>
       <h3>Post List</h3>

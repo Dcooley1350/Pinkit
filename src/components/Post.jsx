@@ -1,14 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import UpVoteButton from './UpVoteButton';
+import DownVoteButton from './DownVoteButton';
 
 const Post = (props) => {
   return (
     <div>
-      <h3>{props.name}</h3>
-      <h3>{props.date}</h3>
-      <h3>{props.topic}</h3>
-      <h3>{props.post}</h3>
-      <h3>{props.id}</h3>
+      <h4>{props.name}</h4>
+      <h5>{props.date}, {props.topic}</h5>
+      <p>{props.post}</p>
+      <h4>{props.id}</h4>
+      <UpVoteButton/>
+      <DownVoteButton/>
+      <hr/>
     </div>
   );
 };

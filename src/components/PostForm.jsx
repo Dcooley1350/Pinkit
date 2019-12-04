@@ -17,7 +17,9 @@ const PostForm = (props) => {
       name: _name.value,
       date: _date.value,
       topic: _topic.value,
-      post: _post.value
+      post: _post.value,
+      upvotes: 0,
+      downvotes: 0,
     };
 
     dispatch(action);
